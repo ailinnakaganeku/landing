@@ -1,11 +1,12 @@
 import { useCallback, useState } from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { SelectedPage } from "@/shared/types";
+import { navbar as string } from "@/assets/strings/es.json";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import Logo from "@/assets/logo.png";
 import Button from "@/components/button";
 import Link from "@/components/link";
-import { navbar as string } from "@/assets/strings/es.json";
 
 type Props = {
   selectedPage: SelectedPage;
@@ -30,7 +31,9 @@ const NavBar = ({ selectedPage, setSelectedPage, isHomePage }: Props) => {
       >
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
-            <img alt="logo" src={Logo} className="h-auto w-24 object-fill" />
+            <AnchorLink href={`#${SelectedPage.Inicio}`.toLowerCase()}>
+              <img alt="logo" src={Logo} className="h-auto w-24 object-fill" />
+            </AnchorLink>
             {isDesktopMin ? (
               <div className={`${flexBetween} w-full`}>
                 <div className={`${flexBetween} gap-8 text-sm`}>
