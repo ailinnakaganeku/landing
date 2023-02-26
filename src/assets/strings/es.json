@@ -23,7 +23,10 @@
     "name": "Nombre",
     "email": "Email",
     "message": "Mensaje",
-    "button": "Enviar"
+    "button": "Enviar",
+    "error_required": "Completá este campo.",
+    "error_maxlength": "El número máximo de caracteres es",
+    "error_email": "Email inválido."
   },
   "footer": {
     "title": "© Ailin Nakaganeku Todos los derechos reservados.",

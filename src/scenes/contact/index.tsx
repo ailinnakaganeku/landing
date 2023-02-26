@@ -5,6 +5,8 @@ import Image from "@/assets/contact.jpeg";
 import Title from "@/components/title";
 import { contact as string } from "@/assets/strings/es.json";
 
+const FORM = "https://formsubmit.co/el/56e43dd9db55935346ccc672680b316c";
+
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
@@ -61,7 +63,7 @@ const Contact = ({ setSelectedPage }: Props) => {
             <form
               target="_blank"
               onSubmit={onSubmit}
-              action=" https://formsubmit.co/el/hogesa"
+              action={FORM}
               method="POST"
             >
               <input
@@ -75,9 +77,9 @@ const Contact = ({ setSelectedPage }: Props) => {
               />
               {errors.name && (
                 <p className="mt-1 text-red-500">
-                  {errors.name.type === "required" && "Completa este campo."}
+                  {errors.name.type === "required" && string.error_required}
                   {errors.name.type === "maxLength" &&
-                    "Max length is 100 char."}
+                    `${string.error_maxlength} 100.`}
                 </p>
               )}
 
@@ -92,8 +94,8 @@ const Contact = ({ setSelectedPage }: Props) => {
               />
               {errors.email && (
                 <p className="mt-1 text-red-500">
-                  {errors.email.type === "required" && "Completa este campo."}
-                  {errors.email.type === "pattern" && "Email inválido."}
+                  {errors.email.type === "required" && string.error_required}
+                  {errors.email.type === "pattern" && string.error_email}
                 </p>
               )}
 
@@ -109,10 +111,9 @@ const Contact = ({ setSelectedPage }: Props) => {
               />
               {errors.message && (
                 <p className="mt-1 text-red-500">
-                  {errors.message.type === "required" &&
-                    "This field is required."}
+                  {errors.message.type === "required" && string.error_required}
                   {errors.message.type === "maxLength" &&
-                    "Max length is 2000 char."}
+                    `${string.error_maxlength} 2000.`}
                 </p>
               )}
 
