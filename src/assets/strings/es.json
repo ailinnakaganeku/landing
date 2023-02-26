@@ -1,0 +1,35 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "biography": "Biografía",
+    "work": "Mi Contenido",
+    "contact": "Contacto",
+    "social_media": "Redes (Próximamente)",
+    "button": "Contacto"
+  },
+  "biography": {
+    "title": "Biografía",
+    "first_paragraph": "David Quint, mejor conocido como Davoo Xeneize o simplemente Davoo es un streamer y youtuber argentino nacido en Boulogne que actualmente reside en Argentina. Cuenta con 270.000 suscriptores en su canal principal y unos 130.000 en su canal secundario. David nació el 4 de diciembre del 2002, por lo que cuenta, actualmente, con 20 años.",
+    "second_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper dolor libero, commodo mattis metus dignissim sit amet. Quisque id tempor sem. Etiam id erat at orci rhoncus feugiat. Nullam finibus scelerisque turpis, vel molestie dui laoreet sed. Donec ullamcorper egestas convallis. Integer porttitor lacinia ante. Nunc volutpat, massa ut suscipit congue, ipsum mi fringilla eros, nec vulputate quam odio quis erat. In et ipsum a est mollis malesuada. Cras at ornare felis. Maecenas vel justo ligula. Fusce feugiat libero ac tortor interdum, ac faucibus arcu interdum. Praesent a porttitor diam. Nam interdum, arcu ut iaculis iaculis, sem est tincidunt tortor, in sollicitudin ipsum erat nec ante. Fusce et nisl imperdiet, euismod quam sit amet, lobortis urna. Praesent egestas porta dolor, a ullamcorper neque venenatis a. Nunc molestie consequat ante, sit amet mattis neque tristique luctus.",
+    "third_paragraph": "Nullam condimentum vel est sed ornare. Donec sapien sapien, iaculis vitae ante sit amet, consectetur semper odio. Vestibulum tincidunt accumsan velit, vel hendrerit velit venenatis et. Nam tempor metus tortor, quis scelerisque massa tempor vel. Nulla lacus sem, mollis non risus non, congue efficitur elit. Proin et tempor ipsum. Phasellus vel ullamcorper mi, in imperdiet libero. Proin vulputate nulla nec ornare sollicitudin. Phasellus tempus nibh dui, quis tincidunt metus varius in.."
+  },
+  "work": {
+    "title": "Un poco de magia",
+    "description": "La idea de esta sección es mostrar un poco del contenido y el trabajo que venís haciendo. Lo más relevante. Acá podría ir un texto introductorio."
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "Completa el siguiente formulario o envía un correo a doxen@0200.com.ar ",
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Mensaje",
+    "button": "Enviar"
+  },
+  "footer": {
+    "title": "© Ailin Nakaganeku Todos los derechos reservados.",
+    "social_media": "Redes",
+    "contact": "Contacto",
+    "email": "doxen@0200.com.ar",
+    "phone": "53-53-456"
+  }
+}
