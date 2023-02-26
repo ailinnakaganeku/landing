@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Work from "./work";
 import Title from "@/components/title";
 import { work as string } from "@/assets/strings/es.json";
+import useMediaQuery from "@/hooks/useMediaQuery";
 
 const videos: Array<ClassType> = [
   {
@@ -30,8 +31,13 @@ type Props = {
 };
 
 const WorkPage = ({ setSelectedPage }: Props) => {
+  const isDesktopMin = useMediaQuery("(min-width: 1060px");
+
   return (
-    <section id="micontenido" className="h-full w-full bg-primary py-40">
+    <section
+      id="micontenido"
+      className={`${isDesktopMin ? " h-full" : ""} w-full bg-primary py-40`}
+    >
       <motion.div
         className="mx-auto w-5/6"
         initial="hidden"
