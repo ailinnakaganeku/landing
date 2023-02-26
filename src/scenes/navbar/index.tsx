@@ -10,14 +10,14 @@ import { navbar as string } from "@/assets/strings/es.json";
 type Props = {
   selectedPage: SelectedPage;
   setSelectedPage: (value: SelectedPage) => void;
-  isTopOfPage: boolean;
+  isHomePage: boolean;
 };
 
-const NavBar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
+const NavBar = ({ selectedPage, setSelectedPage, isHomePage }: Props) => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const flexBetween = "flex items-center justify-between";
   const isDesktopMin = useMediaQuery("(min-width: 1060px");
-  const navbarBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow";
+  const navbarBackground = isHomePage ? "" : "bg-primary drop-shadow";
 
   const handleToggleMenu = useCallback(() => {
     setIsMenuOpen((isMenuOpen) => !isMenuOpen);
@@ -68,7 +68,7 @@ const NavBar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
               </div>
             ) : (
               <button
-                className="rounded-md bg-secondary-500 p-2"
+                className="rounded-md bg-secondary p-2"
                 onClick={handleToggleMenu}
               >
                 <Bars3Icon className="h-6 w-6 text-white" />
@@ -79,7 +79,7 @@ const NavBar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
       </div>
 
       {!isDesktopMin && isMenuOpen && (
-        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
+        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary drop-shadow-xl">
           <div className="flex justify-end p-12">
             <button onClick={handleToggleMenu}>
               <XMarkIcon className="h-6 w-6 text-gray-400" />

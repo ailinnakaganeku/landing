@@ -9,7 +9,7 @@ type Props = {
 const Button = ({ children, setSelectedPage }: Props) => {
   return (
     <AnchorLink
-      className="text-transform: rounded-md bg-secondary-500 px-10 py-2 uppercase text-primary-100  hover:text-white "
+      className="text-transform: rounded-md bg-secondary px-10 py-2 uppercase text-primary  hover:text-white "
       onClick={() => setSelectedPage(SelectedPage.Contacto)}
       href={`#${SelectedPage.Contacto}`.toLowerCase()}
     >

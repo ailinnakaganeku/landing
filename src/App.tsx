@@ -11,15 +11,15 @@ function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
     SelectedPage.Inicio
   );
-  const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
+  const [isHomePage, setIsHomePage] = useState<boolean>(true);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY === 0) {
-        setIsTopOfPage(true);
+        setIsHomePage(true);
         setSelectedPage(SelectedPage.Inicio);
       }
-      if (window.scrollY !== 0) setIsTopOfPage(false);
+      if (window.scrollY !== 0) setIsHomePage(false);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -30,7 +30,7 @@ function App() {
       <NavBar
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
-        isTopOfPage={isTopOfPage}
+        isHomePage={isHomePage}
       />
       <HomePage selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
       <BiographyPage setSelectedPage={setSelectedPage} />
