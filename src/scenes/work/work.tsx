@@ -7,7 +7,7 @@ type Props = {
 const Work = ({ videoId }: Props) => {
   const opts = {
     height: "390",
-    width: "390",
+    width: "640",
   };
   return (
     <li className="relative mx-5 inline-block ">
