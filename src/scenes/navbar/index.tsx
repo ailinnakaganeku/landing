@@ -62,9 +62,15 @@ const NavBar = ({ selectedPage, setSelectedPage, isHomePage }: Props) => {
                   />
                 </div>
                 <div className={`${flexBetween} gap-8`}>
-                  <img src={Twitch} alt="twitch" className="h-5 w-5" />
-                  <img src={Twitter} alt="twitter" className="h-5 w-5" />
-                  <img src={Instagram} alt="instagram" className="h-5 w-5" />
+                  <a href="https://www.twitch.tv/davooxeneize" target="_blank">
+                    <img src={Twitch} alt="twitch" className="h-5 w-5" />
+                  </a>
+                  <a href="https://twitter.com/DavooXeneizeJRR" target="_blank">
+                    <img src={Twitter} alt="twitter" className="h-5 w-5" />
+                  </a>
+                  <a href="https://www.instagram.com/davoobj/" target="_blank">
+                    <img src={Instagram} alt="instagram" className="h-5 w-5" />
+                  </a>
                   <Button setSelectedPage={setSelectedPage}>
                     {string.button}
                   </Button>
