@@ -5,6 +5,9 @@ import { SelectedPage } from "@/shared/types";
 import { navbar as string } from "@/assets/strings/es.json";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import Logo from "@/assets/logo.png";
+import Twitch from "@/assets/twitch.svg";
+import Twitter from "@/assets/twitter.svg";
+import Instagram from "@/assets/instagram.svg";
 import Button from "@/components/button";
 import Link from "@/components/link";
 
@@ -59,11 +62,9 @@ const NavBar = ({ selectedPage, setSelectedPage, isHomePage }: Props) => {
                   />
                 </div>
                 <div className={`${flexBetween} gap-8`}>
-                  <Link
-                    page={string.social_media}
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
+                  <img src={Twitch} alt="twitch" className="h-5 w-5" />
+                  <img src={Twitter} alt="twitter" className="h-5 w-5" />
+                  <img src={Instagram} alt="instagram" className="h-5 w-5" />
                   <Button setSelectedPage={setSelectedPage}>
                     {string.button}
                   </Button>
