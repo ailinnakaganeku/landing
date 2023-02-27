@@ -13,9 +13,15 @@ const Footer = () => {
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
           <h4 className="font-bold">{string.social_media}</h4>
-          <p className="my-5">Twitch</p>
-          <p className="my-5">Twitter</p>
-          <p>Instagram</p>
+          <a href="https://www.twitch.tv/davooxeneize" target="_blank">
+            <p className="my-5">Twitch</p>
+          </a>
+          <a href="https://twitter.com/DavooXeneizeJRR" target="_blank">
+            <p className="my-5">Twitter</p>
+          </a>
+          <a href="https://www.instagram.com/davoobj/" target="_blank">
+            <p>Instagram</p>
+          </a>
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
           <h4 className="font-bold">{string.contact}</h4>
