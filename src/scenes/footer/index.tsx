@@ -13,8 +13,8 @@ const Footer = () => {
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
           <h4 className="font-bold">{string.social_media}</h4>
-          <p className="my-5">Twitter</p>
           <p className="my-5">Twitch</p>
+          <p className="my-5">Twitter</p>
           <p>Instagram</p>
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
