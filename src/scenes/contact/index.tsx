@@ -117,7 +117,7 @@ const Contact = ({ setSelectedPage }: Props) => {
 
               <button
                 type="submit"
-                className="mt-5 rounded-lg bg-secondary px-20 py-3 uppercase transition duration-500 hover:text-white"
+                className="mt-5 rounded-lg bg-primary px-20 py-3 uppercase text-secondary transition duration-500 hover:text-white"
               >
                 {string.button}
               </button>
