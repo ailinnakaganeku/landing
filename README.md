@@ -1,4 +1,4 @@
-# Davoo Xeneixe Langing Page
+# Week 1 = Langing Page
 
 👉 https://davooxeneixe.vercel.app/
 
