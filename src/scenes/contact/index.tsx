@@ -66,6 +66,13 @@ const Contact = ({ setSelectedPage }: Props) => {
               action={FORM}
               method="POST"
             >
+              {errors.name && (
+                <p className="text-red-500">
+                  {errors.name.type === "required" && string.error_required}
+                  {errors.name.type === "maxLength" &&
+                    `${string.error_maxlength} 100.`}
+                </p>
+              )}
               <input
                 className={inputStyles}
                 type="text"
@@ -75,14 +82,12 @@ const Contact = ({ setSelectedPage }: Props) => {
                   maxLength: 100,
                 })}
               />
-              {errors.name && (
-                <p className="mt-1 text-red-500">
-                  {errors.name.type === "required" && string.error_required}
-                  {errors.name.type === "maxLength" &&
-                    `${string.error_maxlength} 100.`}
+              {errors.email && (
+                <p className="text-red-500">
+                  {errors.email.type === "required" && string.error_required}
+                  {errors.email.type === "pattern" && string.error_email}
                 </p>
               )}
-
               <input
                 className={inputStyles}
                 type="text"
@@ -92,13 +97,13 @@ const Contact = ({ setSelectedPage }: Props) => {
                   pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                 })}
               />
-              {errors.email && (
-                <p className="mt-1 text-red-500">
-                  {errors.email.type === "required" && string.error_required}
-                  {errors.email.type === "pattern" && string.error_email}
+              {errors.message && (
+                <p className="text-red-500">
+                  {errors.message.type === "required" && string.error_required}
+                  {errors.message.type === "maxLength" &&
+                    `${string.error_maxlength} 2000.`}
                 </p>
               )}
-
               <textarea
                 className={inputStyles}
                 placeholder={string.message}
@@ -109,13 +114,6 @@ const Contact = ({ setSelectedPage }: Props) => {
                   maxLength: 2000,
                 })}
               />
-              {errors.message && (
-                <p className="mt-1 text-red-500">
-                  {errors.message.type === "required" && string.error_required}
-                  {errors.message.type === "maxLength" &&
-                    `${string.error_maxlength} 2000.`}
-                </p>
-              )}
 
               <button
                 type="submit"
