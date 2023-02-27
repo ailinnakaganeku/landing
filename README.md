@@ -6,4 +6,4 @@
 
 React js (Vite), Typescript and Taiwind CSS.
 
-Made with ❤️ by [Ailin](https://github.com/ailinnakaganeku) 😊
+Made with ❤️ by [Ailin](https://www.linkedin.com/in/ailinak/) 😊
